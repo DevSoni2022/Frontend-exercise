@@ -1,5 +1,6 @@
 import React,{ Component } from "react";
 import Counter from "./component/Counter";
+import ShowDialog from './component/ShowDialog'
 class App extends Component{
 
  constructor(props){
@@ -12,7 +13,8 @@ class App extends Component{
 render(){
   return(
     <div>
-      <Counter/>
+      {/* <Counter/> */}
+      <ShowDialog/>
     </div>
   )
 }
