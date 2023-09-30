@@ -31,6 +31,10 @@ const handleOnChange=(ele)=>{
   let test = ele
 setIncrementBy(test.target.value)
 }
+const reset=()=>{
+  setIncrementBy(0)
+  setCount(0)
+}
   return (
     <div className="counter">
       <span className="Counter-heading">Counter</span>
@@ -44,6 +48,9 @@ setIncrementBy(test.target.value)
         <div className="second-container">
           <label>Increment By</label>
         <input type="number" placeholder="Increment By" onChange={(e)=>handleOnChange(e)} />
+        </div>
+        <div className="reset" onClick={()=>reset()}>
+Reset
         </div>
       </div>
     </div>
